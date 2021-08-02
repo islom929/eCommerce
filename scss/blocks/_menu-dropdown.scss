@@ -1,0 +1,111 @@
+.menu-dropdown__active {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  text-decoration: none;
+  margin: 0;
+  font-family: $poppins;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: $color-black;
+
+  &::after{
+    content: "";
+    display: block;
+    width: 8px;
+    height: 6px;
+    background-image: url(../../img/bottom.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-left: 6px;
+  }
+}
+
+.menu-dropdown:hover .menu-dropdown__list {
+  display: flex;
+}
+
+.menu-dropdown__list {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: $color-green;
+  margin-top: 0;
+  padding: 10px;
+}
+
+.menu-dropdown__item{
+  max-width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  color: #fff;
+}
+
+.menu-dropdown__item:not(:last-child) {
+  margin-bottom: 7px;
+}
+
+.menu-dropdown__link {
+  text-decoration: none;
+  margin: 0;
+  font-family: $poppins;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+@include breakpoint-down (800px){
+  .menu-dropdown__active {
+    position: relative;
+    color: $color-gray;
+  }
+  
+  .menu-dropdown:hover .menu-dropdown__list {
+    opacity: 1;
+  }
+  
+  .menu-dropdown__list {
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    left: 50px;
+    width: auto;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    background-color: $color-green;
+    margin-top: 10px;
+    padding: 10px;
+    transition: opacity 0.4s ease;
+  }
+  
+  .menu-dropdown__item:not(:last-child) {
+    margin-bottom: 7px;
+  }
+  
+  .menu-dropdown__link {
+    text-decoration: none;
+    margin: 0;
+    font-family: $poppins;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: $color-bg-dark-gray;
+    text-transform: capitalize;
+  }
+}

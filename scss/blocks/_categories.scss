@@ -1,0 +1,20 @@
+.categories{
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.categories__wrapper{
+    display: flex;
+}
+
+
+@include breakpoint-down (800px) {
+    .categories{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+    .categories__wrapper{
+        display: flex;
+    }
+}
