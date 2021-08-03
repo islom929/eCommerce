@@ -1,0 +1,75 @@
+.manage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.manage__title {
+  font-family: $poppins;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  color: $color-black;
+  margin: 0;
+}
+
+.manage__list {
+  padding: 0;margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.manage__item:not(:last-child){
+  margin-right: 24px;
+}
+
+.manage__button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-family: $open-sans;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: $color-gray;
+  padding: 0;
+  display: flex;
+  align-items: center;
+    svg{
+      color: transparent;
+      stroke: $color-gray;
+      margin-right: 8px;
+    }
+}
+
+.manage__product-button{
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: "117";
+    width: 32px;
+    height: 18px;
+    display: block;
+    font-family: $poppins;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: $color-green;
+    background-color: #F4F8EC;
+    border-radius: 12px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-right: 4px;
+  }
+}
+
+.manage__button--active {
+  color: $color-black;
+  svg{
+    stroke: $color-green;
+  }
+}
