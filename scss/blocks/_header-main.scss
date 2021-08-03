@@ -25,7 +25,7 @@
   width: 500px;
   padding: 10px 16px;
   background-color: $color-bg-dark-gray;
-  border: 1px solid #d1d1d1;
+  borderr: 1px solid #d1d1d1;
   border-radius: 12px;
 }
 
@@ -44,6 +44,7 @@
   background-image: url(../../img/bottom.svg);
   background-repeat: no-repeat;
   background-position: calc(50% + 45px) center;
+  border-radius: 0;
 }
 
 .header-main__field {
@@ -132,7 +133,9 @@
   font-family: $poppins;
   font-weight: bold;
   font-size: 12px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 

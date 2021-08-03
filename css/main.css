@@ -576,7 +576,7 @@ img {
   width: 500px;
   padding: 10px 16px;
   background-color: #f9f9f9;
-  border: 1px solid #d1d1d1;
+  borderr: 1px solid #d1d1d1;
   border-radius: 12px;
 }
 
@@ -595,6 +595,7 @@ img {
   background-image: url(../../img/bottom.svg);
   background-repeat: no-repeat;
   background-position: calc(50% + 45px) center;
+  border-radius: 0;
 }
 
 .header-main__field {
@@ -706,7 +707,15 @@ img {
   font-family: "Poppins", "Arial", sans-serif;
   font-weight: bold;
   font-size: 12px;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media only screen and (max-width: 900px) {
@@ -2591,6 +2600,24 @@ img {
     font-weight: 600;
     font-size: 21px;
     line-height: 27px;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .blog__link-box {
+    background-image: url(../../img/img-dinner.png);
+  }
+  .blog__eat-column::before {
+    background-image: url(../../img/img-vegetable@2x.png);
+  }
+  .blog__salat::after {
+    background-image: url(../../img/img-salat@2x.png);
+  }
+  .blog__breakfast::after {
+    background-image: url(../../img/img-breakfast@2x.png);
+  }
+  .blog__bread::after {
+    background-image: url(../../img/img-bread@2x.png);
   }
 }
 
