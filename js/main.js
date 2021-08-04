@@ -58,3 +58,20 @@ if (elHeaderMenuBox) {
   });
 }
 
+
+
+var elManageButton = document.querySelector(".manage__button");
+var elManageList = document.querySelector(".manage__list-button");
+
+elManageButton.addEventListener('click', function(){
+     elManageList.classList.remove('manage__button--active');
+
+     elManageButton.classList.add('manage__button--active');
+
+});
+elManageList.addEventListener('click', function(){
+  elManageButton.classList.remove('manage__button--active');
+
+  elManageList.classList.add('manage__button--active');
+
+});
