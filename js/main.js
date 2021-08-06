@@ -75,3 +75,15 @@ elManageList.addEventListener('click', function(){
   elManageList.classList.add('manage__button--active');
 
 });
+
+
+
+
+var elsFiltreButton = document.querySelectorAll(".filtre__list-button");
+var elsFiltreSpan = document.querySelectorAll(".filtre__list-span");
+
+elsFiltreButton.forEach(function (list) {
+  list.addEventListener('click', function () {
+    list.closest('li').remove(".filtre__list-span");
+  });
+});

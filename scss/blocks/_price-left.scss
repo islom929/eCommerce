@@ -1,0 +1,36 @@
+.price-left__box {
+  margin-top: 50px;
+}
+
+.price-left__input-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.price-left__max {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.price-left__line {
+  margin-top: 18px;
+  color: #A9A9A9;
+}
+
+.price-left__min {
+  width: 110px;
+  background: $color-bg-dark-gray;
+  border: 1px solid #d1d1d1;
+  border-radius: 12px;
+  padding: 11px 16px 11px 20px;
+}
+
+.price-left__max:nth-child(1) {
+  margin-right: 14px;
+}
+
+.price-left__max:last-child {
+  margin-left: 14px;
+}

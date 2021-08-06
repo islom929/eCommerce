@@ -1,0 +1,11 @@
+.hero-right__box {
+  width: 869px;
+}
+
+@include breakpoint-down(1200px) {
+
+.hero-right__box{
+  width: 800px;
+}
+
+}

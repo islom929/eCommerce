@@ -1,0 +1,31 @@
+.products__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 40px;
+  margin-bottom: 64px;
+  width: 860px;
+}
+
+.products__item {
+  display: flex;
+  border:   1px solid #D1D1D1;
+  border-radius: 12px;
+}
+
+.products__item:not(:last-child){
+  margin-bottom: 32px;
+}
+
+.products__item:nth-child(6) ~ .products__item {
+display: none;
+}
+
+@include breakpoint-down(1100px){
+  .products__list{
+    width: 700px;
+  }
+}

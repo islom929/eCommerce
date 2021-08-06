@@ -1,0 +1,46 @@
+.brand-left__box {
+  width: 268px;
+}
+
+.brand-left__title {
+  font-family: $poppins;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: $color-black;
+  margin: 0;
+}
+
+.brand-left__list {
+  padding: 0;margin: 0;
+  list-style: none;
+  margin-top: 20px;
+  width: 165px;
+}
+
+.brand-left__item:not(:first-child){
+  margin-top: 15px;
+}
+
+.brand-left__span{
+  font-family: $open-sans;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #151515;
+  display: flex;
+
+  &::before{
+    content: "";
+    width: 22px;
+    height: 22px;
+    background-image: url("../../img/icon-checkbox-unselected.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 10px;
+  }
+}
+
+.brand-left__input:checked ~ .brand-left__span::before {
+  background-image: url("../../img/icon-checkbox-selected.svg");
+}

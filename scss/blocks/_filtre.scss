@@ -171,7 +171,7 @@
   color: $color-green;
   margin-left: 12px;
   padding-left: 8px;
-  padding-right: 24px;
+  padding-right: 8px;
   padding-top: 2px;
   padding-bottom: 2px;
   display: flex;
@@ -179,25 +179,17 @@
   background-color: #F4F8EC;
   border-radius: 12px;
 
-  &::after{
-    content: "";
+  .filtre__list-button{
+    border: none;
+    background-color: transparent;
     width: 12px;
     height: 12px;
     display: block;
     background-image: url("../../img/icon-cross-green.svg");
     background-repeat: no-repeat;
     background-size: contain;
-    margin-left: 4px;
+    margin-left: 5px;
+    cursor: pointer;
   }
 }
 
-.filtre__item{
-  display: none;
-}
-
-.filtre__list {
-
-  .filtre__item-first + .filtre__item-second{
-    display: block;
-  }
-}
