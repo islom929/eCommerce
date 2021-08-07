@@ -41,6 +41,7 @@
       </nav>
 
       <section class="site-header__main header-main">
+        <h1 class="visually-hidden">Menu</h1>
         <a class="header-main__logo-link" href="#"><img class="header-main__logo-img" src="img/logo.svg" alt="logo"
             width="177" height="18"></a>
         <button class="header-main__mobile-search" type="button"></button>
@@ -81,6 +82,7 @@
       </section>
 
       <section class="site-header__menu header-menu">
+        <h2 class="visually-hidden">menu</h2>
         <button class="header-menu__link" type="button">
           <svg class="header-menu__svg" width="24" height="20">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0h24v2H0V0zm0 8h24v2H0V8zm24 8H0v2h24v-2z"
@@ -207,10 +209,8 @@
     </header>
 
     <main class="site-main">
-      <h1 class="visually-hidden">Menu</h1>
-
+      <h2 class="visually-hidden">main</h2>
       <section class="site-main__categories cards-wrapper index-product">
-        <h2 class="visually-hidden">Category Menu</h2>
         <div class="index-product__box">
           <h3 class="index-product__title">Category menu</h3>
           <ul class="index-product__list">
@@ -520,7 +520,7 @@
               <h3 class="blog__card-heading">Our chef tips for a great and tasty dinner ready in 20 minutes</h3>
               <div class="blog__author">
                 <span class="blog__author-name">Author</span>
-                <time class="blog__author-time" datetime="2020-6-17 12:00">17. 6. 2020</time>
+                <time class="blog__author-time" datetime="2020-06-17 19:00">17. 6. 2020</time>
               </div>
             </div>
           </a>
@@ -535,7 +535,7 @@
                 </h3>
                 <div class="blog__column-author">
                   <span class="blog__column-author-name">Author</span>
-                  <time class="blog__column-author-time" datetime="2020-6-15 12:00">15. 6. 2020</time>
+                  <time class="blog__column-author-time" datetime="2020-06-15 19:00">15. 6. 2020</time>
                 </div>
               </div>
             </a>
@@ -546,7 +546,7 @@
                     <h3 class="blog__eat-heading">Salat is kinda good start to your morning routines </h3>
                     <div class="blog__eat-author">
                       <span class="blog__eat-author-name">Author</span>
-                      <time class="blog__eat-author-time" datetime="2020-1-11 12:00">11.1.2020</time>
+                      <time class="blog__eat-author-time" datetime="2020-01-11 12:00">11.1.2020</time>
                     </div>
                   </div>
                 </a>
@@ -557,7 +557,7 @@
                     <h3 class="blog__eat-heading">Our chef tips for a great and healthy breakfast</h3>
                     <div class="blog__eat-author">
                       <span class="blog__eat-author-name">Author</span>
-                      <time class="blog__eat-author-time" datetime="2020-1-11 12:00">11.1.2020</time>
+                      <time class="blog__eat-author-time" datetime="2020-01-11 12:00">11.1.2020</time>
                     </div>
                   </div>
                 </a>
@@ -568,7 +568,7 @@
                     <h3 class="blog__eat-heading">Prepare a simple and delicious breads</h3>
                     <div class="blog__eat-author">
                       <span class="blog__eat-author-name">Author</span>
-                      <time class="blog__eat-author-time" datetime="2020-1-11 12:00">11.1.2020</time>
+                      <time class="blog__eat-author-time" datetime="2020-01-11 12:00">11.1.2020</time>
                     </div>
                   </div>
                 </a>
@@ -777,7 +777,164 @@
         Copyright © 2020 petrbilek.com
       </span>
     </footer>
+
+
+    <div class="shopping-cart">
+      <div class="shopping-cart__wrapper">
+        <div class="shopping-cart__head">
+          <h2 class="shopping-cart__title">Shopping cart</h2>
+          <button class="shopping-cart__btn js-shopping-cart__btn" aria-label="button close" type="button">Close</button>
+        </div>
+        <div class="choosed-product">
+          <div class="choosed-product__features">
+            <img class="choosed-product__features-img" src="img/outcome-img.jpg" alt="Product"
+              width="100" height="67">
+            <button class="choosed-product__features-btn" aria-label="Wishlist" type="button">Wishlist</button>
+            <button class="choosed-product__features-btn choosed-product__features-btn--compare" aria-label="Compare"
+              type="button">Compare</button>
+            <button class="choosed-product__features-btn choosed-product__features-btn--remove" aria-label="Remove"
+              type="button">Remove</button>
+          </div>
+          <div class="choosed-product__content">
+            <h3 class="choosed-product__content-title">Poduct title</h3>
+            <dl>
+              <div class="choosed-product__name">
+                <dt class="choosed-product__name-title">Farm:</dt>
+                <dd class="choosed-product__name-desc">Tharamis Farm</dd>
+              </div>
+              <div class="choosed-product__name">
+                <dt class="choosed-product__name-title">Freshness:</dt>
+                <dd class="choosed-product__name-desc">1 day old</dd>
+              </div>
+            </dl>
+            <div class="product__stars">
+              <div class="product__stars-empty">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+              </div>
+
+              <div class="product__stars-full" style="width: 25%;">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+              </div>
+            </div>
+            <div class="choosed-product__sale">
+              <div class="choosed-product__sale-wrap">
+                <span class="choosed-product__price">36.99 USD</span>
+                <span class="choosed-product__rebate">48.56 USD</span>
+              </div>
+              <form class="select-form" action="https://echo.htmlacademy.ru" method="POST">
+                <div class="select-form__group">
+                  <span class="select-from__chosen">1 pcs</span>
+                  <select class="select-form__select" name="products" aria-label="Choosen product">
+                    <option value="test">Pcs</option>
+                    <option value="test1">Test2</option>
+                    <option value="test2">Test3</option>
+                    <option value="test3">Test4</option>
+                    <option value="test4">Test5</option>
+                  </select>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="choosed-product">
+          <div class="choosed-product__features">
+            <img class="choosed-product__features-img" src="img/outcome-img.jpg" alt="Product"
+              width="100" height="67">
+            <button class="choosed-product__features-btn" aria-label="Wishlist" type="button">Wishlist</button>
+            <button class="choosed-product__features-btn choosed-product__features-btn--compare" aria-label="Compare"
+              type="button">Compare</button>
+            <button class="choosed-product__features-btn choosed-product__features-btn--remove" aria-label="Remove"
+              type="button">Remove</button>
+          </div>
+          <div class="choosed-product__content">
+            <h3 class="choosed-product__content-title">Poduct title</h3>
+            <dl>
+              <div class="choosed-product__name">
+                <dt class="choosed-product__name-title">Farm:</dt>
+                <dd class="choosed-product__name-desc">Tharamis Farm</dd>
+              </div>
+              <div class="choosed-product__name">
+                <dt class="choosed-product__name-title">Freshness:</dt>
+                <dd class="choosed-product__name-desc">1 day old</dd>
+              </div>
+            </dl>
+            <div class="product__stars">
+              <div class="product__stars-empty">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+              </div>
+
+              <div class="product__stars-full" style="width: 25%;">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+              </div>
+            </div>
+            <div class="choosed-product__sale">
+              <div class="choosed-product__sale-wrap">
+                <span class="choosed-product__price">36.99 USD</span>
+                <span class="choosed-product__rebate">48.56 USD</span>
+              </div>
+              <form class="select-form" action="https://echo.htmlacademy.ru" method="POST">
+                <div class="select-form__group">
+                  <span class="select-from__chosen">1 pcs</span>
+                  <select class="select-form__select" name="products" aria-label="Choosen product">
+                    <option value="test">Pcs</option>
+                    <option value="test1">Test2</option>
+                    <option value="test2">Test3</option>
+                    <option value="test3">Test4</option>
+                    <option value="test4">Test5</option>
+                  </select>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="total">
+          <h3 class="total__title">Subtotal</h3>
+          <span class="total__price">73.98 USD</span>
+          <div class="total__shopping">
+            <p class="total__shopping-continue">Continue shopping</p>
+            <a class="total__shopping-link" href="category.html">Go to Chekout</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+
 
   <script src="js/main.js"></script>
 </body>

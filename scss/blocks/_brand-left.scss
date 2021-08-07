@@ -1,5 +1,5 @@
 .brand-left__box {
-  width: 268px;
+  width: 1005;
 }
 
 .brand-left__title {
@@ -15,7 +15,7 @@
   padding: 0;margin: 0;
   list-style: none;
   margin-top: 20px;
-  width: 165px;
+  width: 65%;
 }
 
 .brand-left__item:not(:first-child){
@@ -34,13 +34,23 @@
     content: "";
     width: 22px;
     height: 22px;
-    background-image: url("../../img/icon-checkbox-unselected.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
+    border: 1.5px solid #D1D1D1;
+    border-radius: 3px;
     margin-right: 10px;
   }
 }
 
 .brand-left__input:checked ~ .brand-left__span::before {
-  background-image: url("../../img/icon-checkbox-selected.svg");
+  background-color: $color-green;
+  background-image: url(../../img/icon-check.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-color: $color-border-dark-green;
+}
+
+
+@include breakpoint-down(1050px) {
+  .brand-left__list {
+    width: 55%;
+  }
 }

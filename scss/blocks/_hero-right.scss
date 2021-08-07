@@ -1,11 +1,12 @@
-.hero-right__box {
-  width: 869px;
+.hero-right {
+  width: 75%;
 }
 
-@include breakpoint-down(1200px) {
+@include breakpoint-down (1050px){
 
-.hero-right__box{
-  width: 800px;
+.hero-right {
+  width: 100%;
 }
+
 
 }

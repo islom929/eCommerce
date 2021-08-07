@@ -1,5 +1,5 @@
 .price-left__box {
-  margin-top: 50px;
+    margin-top: 50px;
 }
 
 .price-left__input-box{
@@ -33,4 +33,50 @@
 
 .price-left__max:last-child {
   margin-left: 14px;
+}
+
+.price-left__range {
+  width: 100%;
+  height: 6px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  border-radius: 12px;
+  background-color:#ebebeb;
+}
+
+.price-left__range-inner {
+  position: relative;
+  width: 80px;
+  height: 100%;
+  margin-left: 50px;
+  border-radius: 12px;
+  background-color:#6a983c;
+}
+
+.price-left__range-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  background-color: #fff;
+  border: 1px solid #d1d1d1;
+  border-radius: 50%;
+  box-shadow:0 2px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.price-left__range-btn--left {
+  left:-11px;
+}
+
+.price-left__range-btn--right {
+  right:-11px;
+}
+
+@include breakpoint-down(1050px){
+
+
 }

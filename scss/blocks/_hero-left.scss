@@ -1,6 +1,24 @@
-.hero-left__box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 268px;
+.hero-left {
+  width: 23%;
+}
+
+@include breakpoint-down(1050px){
+
+  .hero--open {
+    .hero-left {
+    display: block;
+  }
+  }
+
+
+  .hero-left {
+    width:  40%;
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: $color-bg-dark-gray;
+    padding: 30px;
+  }
+
 }

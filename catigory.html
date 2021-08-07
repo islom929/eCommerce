@@ -14,8 +14,9 @@
 <div class="container">
 
 <header class="site-header">
-
+  <h1 class="visually-hidden">test</h1>
   <nav class="site-header__nav nav">
+
       <div class="nav__box">
           <ul class="nav__contact-list">
               <li class="nav__contact-item">
@@ -43,6 +44,7 @@
   </nav>
 
   <section class="site-header__main header-main">
+    <h2 class="visually-hidden"> test</h2>
     <a class="header-main__logo-link" href="#"><img class="header-main__logo-img" src="img/logo.svg" alt="logo"
         width="177" height="18"></a>
     <button class="header-main__mobile-search" type="button"></button>
@@ -83,6 +85,7 @@
   </section>
 
   <section class="site-header__menu header-menu">
+    <h2 class="visually-hidden">test</h2>
     <button class="header-menu__link" type="button">
       <svg class="header-menu__svg" width="24" height="20">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0h24v2H0V0zm0 8h24v2H0V8zm24 8H0v2h24v-2z"
@@ -211,16 +214,16 @@
 <main class="site-main">
   <div class="site-main index-catigory">
     <a class="index-catigory__link" href="index.html">Homepage</a>
-    /
+
     <a class="index-catigory__link index-catigory__link--active" href="catigory.html">Fruit and vegetables</a>
   </div>
 
 <section class="manage">
-  <h1 class="manage__title">Fruit and vegetables</h1>
+  <h2 class="manage__title">Fruit and vegetables</h2>
 
 <ul class="manage__list">
     <li class="manage__item">
-        <button class="manage__button manage__button--active"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
+        <button class="manage__button manage__button--grid"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
           <path d="M13.333 1.33331H2.66634C1.92996 1.33331 1.33301 1.93027 1.33301 2.66665V13.3333C1.33301 14.0697 1.92996 14.6666 2.66634 14.6666H13.333C14.0694 14.6666 14.6663 14.0697 14.6663 13.3333V2.66665C14.6663 1.93027 14.0694 1.33331 13.333 1.33331Z" stroke="" stroke-linecap="round" stroke-linejoin="round"/>
           <path d="M1.33301 8H14.6663" stroke="" stroke-linecap="round" stroke-linejoin="round"/>
           <path d="M8 1.33331V14.6666" stroke="" stroke-linecap="round" stroke-linejoin="round"/>
@@ -228,7 +231,7 @@
           Grid view</button>
     </li>
     <li class="manage__item">
-        <button class="manage__button manage__list-button">
+        <button class="manage__button manage__button--active manage__button--list">
           <svg width="16" height="16" viewBox="0 0 16 16" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
             <path d="M13.333 1.33331H2.66634C1.92996 1.33331 1.33301 1.93027 1.33301 2.66665V13.3333C1.33301 14.0697 1.92996 14.6666 2.66634 14.6666H13.333C14.0694 14.6666 14.6663 14.0697 14.6663 13.3333V2.66665C14.6663 1.93027 14.0694 1.33331 13.333 1.33331Z" stroke="" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M1.33301 4.66663H14.6663" stroke="" stroke-linecap="round" stroke-linejoin="round"/>
@@ -243,7 +246,7 @@
 </ul>
 </section>
 
-<section class="filtre">
+<section class="filtre form">
 
   <div class="filtre__box">
 
@@ -300,7 +303,7 @@
       </div>
     </form>
 
-  <div class="filtre-list__box">
+  <div class="filtre__list-box">
     <h3 class="filtre__title"> Applied filtres:</h3>
 
     <ul class="filtre__list">
@@ -324,11 +327,7 @@
             <button class="filtre__list-button"></button>
           </span>
       </li>
-      <li class="filtre__item">
-          <span class="filtre__list-span">Selected Filtre
-            <button class="filtre__list-button"></button>
-          </span>
-      </li>
+
     </ul>
   </div>
 
@@ -337,16 +336,20 @@
 </section>
 
 <section class="hero">
+  <h2 class="visually-hidden">test</h2>
 
   <div class="hero__box">
+    <button class="hero__button"></button>
 
-<section class="hero-left">
+<section class="hero-left ">
 
-<div class="hero-left__box">
+  <h2 class="visually-hidden">test</h2>
+
+
 
   <form class="" action="https://echo.htmlacademy.ru" method="GET">
 
-  <h2 class="visually-hidden">test</h2>
+    <div class="hero-left__box">
 
 <section class="category-left">
 
@@ -393,7 +396,7 @@
           </li>
           <li class="brand-left__item">
             <label  class="brand-left__label">
-              <input type="checkbox"name="brand-checkbox"  class="visually-hidden brand-left__input">
+              <input type="checkbox" name="brand-checkbox"  class="visually-hidden brand-left__input">
               <span class="brand-left__span">Filtre by brand item</span>
             </label>
           </li>
@@ -414,79 +417,89 @@
 
     </section>
 
-    <section class="rating-left">
+    <section class="rating-left rating brand brand-left">
 
       <div class="rating-left__box">
 
         <h3 class="brand-left__title rating-left__title">Rating</h3>
 
-        <div class="card__stars">
-          <div class="card__stars-empty">
-            <img class="card__empty" src="./img/star-empty.svg"
-            alt="" width="16" height="16">
-            <img class="card__empty" src="./img/star-empty.svg"
-            alt="" width="16" height="16">
-            <img class="card__empty" src="./img/star-empty.svg"
-            alt="" width="16" height="16">
-            <img class="card__empty" src="./img/star-empty.svg"
-            alt="" width="16" height="16">
-            <img class="card__empty" src="./img/star-empty.svg"
-            alt="" width="16" height="16">
-          </div>
-
-          <div class="card__stars-full" style="width: 25%;">
-            <img class="card__full" src="./img/star-full.svg"
-            alt="" width="16" height="16">
-            <img class="card__full" src="./img/star-full.svg"
-            alt="" width="16" height="16">
-            <img class="card__full" src="./img/star-full.svg"
-            alt="" width="16" height="16">
-            <img class="card__full" src="./img/star-full.svg"
-            alt="" width="16" height="16">
-            <img class="card__full" src="./img/star-full.svg"
-            alt="" width="16" height="16">
-          </div>
-        </div>
+        <label class="rating__brand">
+          <input class="rating__brand-field" type="checkbox" name="Rating1">
+          <span class="rating__box-check"></span>
+          <img class="rating__rating-img" src="img/star-five.svg" alt="stars">
+        </label>
+        <label class="rating__brand">
+          <input class="rating__brand-field" type="checkbox" name="Rating2">
+          <span class="rating__box-check"></span>
+          <img class="rating__rating-img" src="img/star-four.svg" alt="stars">
+        </label>
+        <label class="rating__brand">
+          <input class="rating__brand-field" type="checkbox" name="Rating3">
+          <span class="rating__box-check"></span>
+          <img class="rating__rating-img" src="img/star-three.svg" alt="stars">
+        </label>
+        <label class="rating__brand">
+          <input class="rating__brand-field" type="checkbox" name="Rating4">
+          <span class="rating__box-check"></span>
+          <img class="rating__rating-img" src="img/star-two.svg" alt="stars">
+        </label>
+        <label class="rating__brand">
+          <input class="rating__brand-field" type="checkbox" name="Rating5">
+          <span class="rating__box-check"></span>
+          <img class="rating__rating-img" src="img/star-one.svg" alt="stars">
+        </label>
 
 
       </div>
 
     </section>
 
-    <section class="price-left">
+    <section class="price-left brand-left">
 
       <div class="price-left__box">
 
         <h3 class="brand-left__title price-left__title">Price</h3>
 
+        <div class="price-left__range">
+          <div class="price-left__range-inner">
+            <button class="price-left__range-btn price-left__range-btn--left" type="button"
+              aria-label="Range button"></button>
+            <button class="price-left__range-btn price-left__range-btn--right" type="button"
+              aria-label="Range button"></button>
+          </div>
+        </div>
+
         <div class="price-left__input-box">
 
             <label class="price-left__max">
               Min
-              <input class="price-left__min" type="number-min" name="min" placeholder="0" min="1">
+              <input class="price-left__min" type="number" name="min" placeholder="0" min="1">
             </label>
             <span class="price-left__line">-</span>
             <label class="price-left__max">
               Max
-              <input class="price-left__min" type="number-max" name="min" placeholder="000" min="1">
+              <input class="price-left__min" type="number" name="min" placeholder="000" min="1">
             </label>
         </div>
 
       </div>
 
     </section>
-  </form>
   </div>
+
+  </form>
+
 
 </section>
 
 <section class="hero-right">
 
+<h2 class="visually-hidden">test</h2>
   <div class="hero-right__box">
 
-<section class="products">
+<section class="products product">
 
-  <div class="products__box products__box--grid ">
+  <div class="products__box">
 
     <ul class="products__list">
       <li class="products__item">
@@ -495,6 +508,33 @@
             <h3 class="product__heading">Product title</h3>
             <p class="product__content">Space for a small product description
             </p>
+            <div class="product__stars">
+              <div class="product__stars-empty">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+              </div>
+
+              <div class="product__stars-full" style="width: 25%;">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+              </div>
+            </div>
             <ul class="product__list">
               <li class="product__item">
                 <p class="product__text">Fresheness</p>
@@ -512,13 +552,16 @@
             </ul>
           </div>
           <div class="product__right-box">
-            <h4 class="product__title-price">36.99 USD</h4>
-            <p class="product__text-price">48.56</p>
+            <div class="product__price-box">
+              <h4 class="product__title-price">36.99 USD</h4>
+              <p class="product__text-price">48.56</p>
+          </div>
             <p class="product__text-shipping">Free Shipping</p>
             <p class="product__text-delivery">Delivery in 1 day</p>
             <div class="product__link-box">
               <a href="#" class="product__button">Product Detail</a>
               <a href="#" class="product__link">Add to wish list</a>
+              <a href="#" class="product__button product__buy">Buy now</a>
             </div>
           </div>
         </div>
@@ -529,6 +572,33 @@
             <h3 class="product__heading">Product title</h3>
             <p class="product__content">Space for a small product description
             </p>
+            <div class="product__stars">
+              <div class="product__stars-empty">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+              </div>
+
+              <div class="product__stars-full" style="width: 25%;">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+              </div>
+            </div>
             <ul class="product__list">
               <li class="product__item">
                 <p class="product__text">Fresheness</p>
@@ -546,13 +616,16 @@
             </ul>
           </div>
           <div class="product__right-box">
-            <h4 class="product__title-price">36.99 USD</h4>
-            <p class="product__text-price">48.56</p>
+            <div class="product__price-box">
+              <h4 class="product__title-price">36.99 USD</h4>
+              <p class="product__text-price">48.56</p>
+          </div>
             <p class="product__text-shipping">Free Shipping</p>
             <p class="product__text-delivery">Delivery in 1 day</p>
             <div class="product__link-box">
               <a href="#" class="product__button">Product Detail</a>
               <a href="#" class="product__link">Add to wish list</a>
+              <a href="#" class="product__button product__buy">Buy now</a>
             </div>
           </div>
         </div>
@@ -563,6 +636,33 @@
             <h3 class="product__heading">Product title</h3>
             <p class="product__content">Space for a small product description
             </p>
+            <div class="product__stars">
+              <div class="product__stars-empty">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+              </div>
+
+              <div class="product__stars-full" style="width: 25%;">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+              </div>
+            </div>
             <ul class="product__list">
               <li class="product__item">
                 <p class="product__text">Fresheness</p>
@@ -580,13 +680,16 @@
             </ul>
           </div>
           <div class="product__right-box">
-            <h4 class="product__title-price">36.99 USD</h4>
-            <p class="product__text-price">48.56</p>
+            <div class="product__price-box">
+              <h4 class="product__title-price">36.99 USD</h4>
+              <p class="product__text-price">48.56</p>
+          </div>
             <p class="product__text-shipping">Free Shipping</p>
             <p class="product__text-delivery">Delivery in 1 day</p>
             <div class="product__link-box">
               <a href="#" class="product__button">Product Detail</a>
               <a href="#" class="product__link">Add to wish list</a>
+              <a href="#" class="product__button product__buy">Buy now</a>
             </div>
           </div>
         </div>
@@ -597,6 +700,33 @@
             <h3 class="product__heading">Product title</h3>
             <p class="product__content">Space for a small product description
             </p>
+            <div class="product__stars">
+              <div class="product__stars-empty">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+              </div>
+
+              <div class="product__stars-full" style="width: 25%;">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+              </div>
+            </div>
             <ul class="product__list">
               <li class="product__item">
                 <p class="product__text">Fresheness</p>
@@ -614,13 +744,16 @@
             </ul>
           </div>
           <div class="product__right-box">
-            <h4 class="product__title-price">36.99 USD</h4>
-            <p class="product__text-price">48.56</p>
+            <div class="product__price-box">
+              <h4 class="product__title-price">36.99 USD</h4>
+              <p class="product__text-price">48.56</p>
+          </div>
             <p class="product__text-shipping">Free Shipping</p>
             <p class="product__text-delivery">Delivery in 1 day</p>
             <div class="product__link-box">
               <a href="#" class="product__button">Product Detail</a>
               <a href="#" class="product__link">Add to wish list</a>
+              <a href="#" class="product__button product__buy">Buy now</a>
             </div>
           </div>
         </div>
@@ -631,6 +764,33 @@
             <h3 class="product__heading">Product title</h3>
             <p class="product__content">Space for a small product description
             </p>
+            <div class="product__stars">
+              <div class="product__stars-empty">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+              </div>
+
+              <div class="product__stars-full" style="width: 25%;">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+              </div>
+            </div>
             <ul class="product__list">
               <li class="product__item">
                 <p class="product__text">Fresheness</p>
@@ -648,13 +808,16 @@
             </ul>
           </div>
           <div class="product__right-box">
-            <h4 class="product__title-price">36.99 USD</h4>
-            <p class="product__text-price">48.56</p>
+            <div class="product__price-box">
+              <h4 class="product__title-price">36.99 USD</h4>
+              <p class="product__text-price">48.56</p>
+          </div>
             <p class="product__text-shipping">Free Shipping</p>
             <p class="product__text-delivery">Delivery in 1 day</p>
             <div class="product__link-box">
               <a href="#" class="product__button">Product Detail</a>
               <a href="#" class="product__link">Add to wish list</a>
+              <a href="#" class="product__button product__buy">Buy now</a>
             </div>
           </div>
         </div>
@@ -665,6 +828,33 @@
             <h3 class="product__heading">Product title</h3>
             <p class="product__content">Space for a small product description
             </p>
+            <div class="product__stars">
+              <div class="product__stars-empty">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+              </div>
+
+              <div class="product__stars-full" style="width: 25%;">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+              </div>
+            </div>
             <ul class="product__list">
               <li class="product__item">
                 <p class="product__text">Fresheness</p>
@@ -682,13 +872,16 @@
             </ul>
           </div>
           <div class="product__right-box">
-            <h4 class="product__title-price">36.99 USD</h4>
-            <p class="product__text-price">48.56</p>
+            <div class="product__price-box">
+              <h4 class="product__title-price">36.99 USD</h4>
+              <p class="product__text-price">48.56</p>
+          </div>
             <p class="product__text-shipping">Free Shipping</p>
             <p class="product__text-delivery">Delivery in 1 day</p>
             <div class="product__link-box">
               <a href="#" class="product__button">Product Detail</a>
               <a href="#" class="product__link">Add to wish list</a>
+              <a href="#" class="product__button product__buy">Buy now</a>
             </div>
           </div>
         </div>
@@ -699,6 +892,33 @@
             <h3 class="product__heading">Product title</h3>
             <p class="product__content">Space for a small product description
             </p>
+            <div class="product__stars">
+              <div class="product__stars-empty">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+              </div>
+
+              <div class="product__stars-full" style="width: 25%;">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+              </div>
+            </div>
             <ul class="product__list">
               <li class="product__item">
                 <p class="product__text">Fresheness</p>
@@ -716,13 +936,16 @@
             </ul>
           </div>
           <div class="product__right-box">
-            <h4 class="product__title-price">36.99 USD</h4>
-            <p class="product__text-price">48.56</p>
+            <div class="product__price-box">
+              <h4 class="product__title-price">36.99 USD</h4>
+              <p class="product__text-price">48.56</p>
+          </div>
             <p class="product__text-shipping">Free Shipping</p>
             <p class="product__text-delivery">Delivery in 1 day</p>
             <div class="product__link-box">
               <a href="#" class="product__button">Product Detail</a>
               <a href="#" class="product__link">Add to wish list</a>
+              <a href="#" class="product__button product__buy">Buy now</a>
             </div>
           </div>
         </div>
@@ -733,6 +956,33 @@
             <h3 class="product__heading">Product title</h3>
             <p class="product__content">Space for a small product description
             </p>
+            <div class="product__stars">
+              <div class="product__stars-empty">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+              </div>
+
+              <div class="product__stars-full" style="width: 25%;">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+              </div>
+            </div>
             <ul class="product__list">
               <li class="product__item">
                 <p class="product__text">Fresheness</p>
@@ -750,13 +1000,16 @@
             </ul>
           </div>
           <div class="product__right-box">
-            <h4 class="product__title-price">36.99 USD</h4>
-            <p class="product__text-price">48.56</p>
+            <div class="product__price-box">
+              <h4 class="product__title-price">36.99 USD</h4>
+              <p class="product__text-price">48.56</p>
+          </div>
             <p class="product__text-shipping">Free Shipping</p>
             <p class="product__text-delivery">Delivery in 1 day</p>
             <div class="product__link-box">
               <a href="#" class="product__button">Product Detail</a>
               <a href="#" class="product__link">Add to wish list</a>
+              <a href="#" class="product__button product__buy">Buy now</a>
             </div>
           </div>
         </div>
@@ -767,6 +1020,33 @@
             <h3 class="product__heading">Product title</h3>
             <p class="product__content">Space for a small product description
             </p>
+            <div class="product__stars">
+              <div class="product__stars-empty">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+              </div>
+
+              <div class="product__stars-full" style="width: 25%;">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+              </div>
+            </div>
             <ul class="product__list">
               <li class="product__item">
                 <p class="product__text">Fresheness</p>
@@ -784,13 +1064,16 @@
             </ul>
           </div>
           <div class="product__right-box">
-            <h4 class="product__title-price">36.99 USD</h4>
-            <p class="product__text-price">48.56</p>
+            <div class="product__price-box">
+              <h4 class="product__title-price">36.99 USD</h4>
+              <p class="product__text-price">48.56</p>
+          </div>
             <p class="product__text-shipping">Free Shipping</p>
             <p class="product__text-delivery">Delivery in 1 day</p>
             <div class="product__link-box">
               <a href="#" class="product__button">Product Detail</a>
               <a href="#" class="product__link">Add to wish list</a>
+              <a href="#" class="product__button product__buy">Buy now</a>
             </div>
           </div>
         </div>
@@ -810,11 +1093,14 @@
 </section>
 
 <section class="more-products">
+  <h2 class="visually-hidden">test</h2>
 
-  <div class="more-products__box products-left products-right products-center">
+  <div class="more-products__box products-left products-right products-center manage product">
 
     <ul class="products-left__list">
+      <li class="">
       <span class="products-left__span">Page:</span>
+      </li>
       <li class="products-left__item">
           <a href="#" class="products-left__link">1</a>
       </li>
@@ -1040,7 +1326,163 @@
         Copyright © 2020 petrbilek.com
       </span>
     </footer>
+
+    <div class="shopping-cart">
+      <div class="shopping-cart__wrapper">
+        <div class="shopping-cart__head">
+          <h2 class="shopping-cart__title">Shopping cart</h2>
+          <button class="shopping-cart__btn js-shopping-cart__btn" aria-label="button close" type="button">Close</button>
+        </div>
+        <div class="choosed-product">
+          <div class="choosed-product__features">
+            <img class="choosed-product__features-img" src="img/outcome-img.jpg" alt="Product"
+              width="100" height="67">
+            <button class="choosed-product__features-btn" aria-label="Wishlist" type="button">Wishlist</button>
+            <button class="choosed-product__features-btn choosed-product__features-btn--compare" aria-label="Compare"
+              type="button">Compare</button>
+            <button class="choosed-product__features-btn choosed-product__features-btn--remove" aria-label="Remove"
+              type="button">Remove</button>
+          </div>
+          <div class="choosed-product__content">
+            <h3 class="choosed-product__content-title">Poduct title</h3>
+            <dl>
+              <div class="choosed-product__name">
+                <dt class="choosed-product__name-title">Farm:</dt>
+                <dd class="choosed-product__name-desc">Tharamis Farm</dd>
+              </div>
+              <div class="choosed-product__name">
+                <dt class="choosed-product__name-title">Freshness:</dt>
+                <dd class="choosed-product__name-desc">1 day old</dd>
+              </div>
+            </dl>
+            <div class="product__stars">
+              <div class="product__stars-empty">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+              </div>
+
+              <div class="product__stars-full" style="width: 25%;">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+              </div>
+            </div>
+            <div class="choosed-product__sale">
+              <div class="choosed-product__sale-wrap">
+                <span class="choosed-product__price">36.99 USD</span>
+                <span class="choosed-product__rebate">48.56 USD</span>
+              </div>
+              <form class="select-form" action="https://echo.htmlacademy.ru" method="POST">
+                <div class="select-form__group">
+                  <span class="select-from__chosen">1 pcs</span>
+                  <select class="select-form__select" name="products" aria-label="Choosen product">
+                    <option value="test">Pcs</option>
+                    <option value="test1">Test2</option>
+                    <option value="test2">Test3</option>
+                    <option value="test3">Test4</option>
+                    <option value="test4">Test5</option>
+                  </select>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="choosed-product">
+          <div class="choosed-product__features">
+            <img class="choosed-product__features-img" src="img/outcome-img.jpg" alt="Product"
+              width="100" height="67">
+            <button class="choosed-product__features-btn" aria-label="Wishlist" type="button">Wishlist</button>
+            <button class="choosed-product__features-btn choosed-product__features-btn--compare" aria-label="Compare"
+              type="button">Compare</button>
+            <button class="choosed-product__features-btn choosed-product__features-btn--remove" aria-label="Remove"
+              type="button">Remove</button>
+          </div>
+          <div class="choosed-product__content">
+            <h3 class="choosed-product__content-title">Poduct title</h3>
+            <dl>
+              <div class="choosed-product__name">
+                <dt class="choosed-product__name-title">Farm:</dt>
+                <dd class="choosed-product__name-desc">Tharamis Farm</dd>
+              </div>
+              <div class="choosed-product__name">
+                <dt class="choosed-product__name-title">Freshness:</dt>
+                <dd class="choosed-product__name-desc">1 day old</dd>
+              </div>
+            </dl>
+            <div class="product__stars">
+              <div class="product__stars-empty">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+                <img class="product__empty" src="./img/star-empty.svg"
+                alt="" width="16" height="16">
+              </div>
+
+              <div class="product__stars-full" style="width: 25%;">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+                <img class="product__full" src="./img/star-full.svg"
+                alt="" width="16" height="16">
+              </div>
+            </div>
+            <div class="choosed-product__sale">
+              <div class="choosed-product__sale-wrap">
+                <span class="choosed-product__price">36.99 USD</span>
+                <span class="choosed-product__rebate">48.56 USD</span>
+              </div>
+              <form class="select-form" action="https://echo.htmlacademy.ru" method="POST">
+                <div class="select-form__group">
+                  <span class="select-from__chosen">1 pcs</span>
+                  <select class="select-form__select" name="products" aria-label="Choosen product">
+                    <option value="test">Pcs</option>
+                    <option value="test1">Test2</option>
+                    <option value="test2">Test3</option>
+                    <option value="test3">Test4</option>
+                    <option value="test4">Test5</option>
+                  </select>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="total">
+          <h3 class="total__title">Subtotal</h3>
+          <span class="total__price">73.98 USD</span>
+          <div class="total__shopping">
+            <p class="total__shopping-continue">Continue shopping</p>
+            <a class="total__shopping-link" href="category.html">Go to Chekout</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+
 
   <script src="js/main.js"></script>
 </body>

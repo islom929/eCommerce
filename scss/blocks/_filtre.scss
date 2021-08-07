@@ -1,6 +1,7 @@
 .filtre__form {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   div{
     margin-right: 16px;
   }
@@ -35,6 +36,7 @@
   padding: 10px 16px;
   background-color: $color-bg-dark-gray;
   width: 236px;
+  margin-top: 16px;
 
   label{
     font-family: $open-sans;
@@ -58,6 +60,7 @@
   padding: 10px 16px;
   background-color: $color-bg-dark-gray;
   width: 151px;
+  margin-top: 16px;
 
   label{
     font-family: $open-sans;
@@ -139,11 +142,11 @@
   }
 }
 
-.filtre-list__box {
+.filtre__list-box {
   display: flex;
-  align-items: center;
-  margin-top: 16px;
+  align-items: flex-start;
   margin-bottom: 16px;
+  width: 100%;
 }
 
 .filtre__title {
@@ -153,6 +156,8 @@
   line-height: 18px;
   color: $color-gray;
   margin: 0;
+  white-space: nowrap;
+  margin-top: 16px;
 }
 
 .filtre__list {
@@ -161,7 +166,14 @@
   padding: 0;
   margin: 0;
   list-style: none;
+  flex-wrap: wrap;
+
+  li{
+  margin-top: 16px;
+  }
 }
+
+
 
 .filtre__list-span {
   font-family: $poppins;
@@ -192,4 +204,3 @@
     cursor: pointer;
   }
 }
-

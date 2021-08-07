@@ -13,6 +13,7 @@
   line-height: 48px;
   color: $color-black;
   margin: 0;
+  white-space: nowrap;
 }
 
 .manage__list {
@@ -72,4 +73,13 @@
   svg{
     stroke: $color-green;
   }
+}
+
+
+@include breakpoint-down(660px){
+
+.manage {
+  flex-direction: column;
+}
+
 }

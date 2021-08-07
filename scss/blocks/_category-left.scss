@@ -1,7 +1,7 @@
 
 .category-left__box {
-  width: 268px;
-  margin-bottom: 48px;
+  width: 100%;
+  margin-bottom: 17%;
 }
 
 .category-left__title {
@@ -99,4 +99,11 @@
   border-radius: 12px;
   padding-left: 8px;
   padding-right: 8px;
+}
+
+@include breakpoint-down(1050px) {
+
+  .category-left__list {
+
+  }
 }
