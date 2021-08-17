@@ -22,9 +22,9 @@
 
 
 <div class="container-lg">
-  <div class="row">
+  <div class="row  justify-content-between">
 
-    <div class="col-md-7">
+    <div class="col-md-7 pr-4">
       <h2 class="font-weight-bolder">Billing info</h2>
     <div class="d-flex align-items-center justify-content-between">
       <p class="text-black-50">Please enter your billing info</p>
@@ -35,31 +35,31 @@
     <div class="form-row">
       <div class="col-md-6 mb-3">
         <label class="h6" for="validationDefault01">First name</label>
-        <input type="text" class="form-control bg-light rounded-lg" id="validationDefault01" placeholder="First name" required>
+        <input type="text" name="input_naem" class="form-control bg-light rounded-lg" id="validationDefault01" placeholder="First name" required>
       </div>
       <div class="col-md-6 mb-3">
         <label class="h6" for="validationDefault02">Last name</label>
-        <input type="text" class="form-control bg-light rounded-lg" id="validationDefault02" placeholder="Last name" required>
+        <input type="text" name="input_lname" class="form-control bg-light rounded-lg" id="validationDefault02" placeholder="Last name" required>
       </div>
     </div>
     <div class="form-row">
       <div class="col-md-6 mb-3">
         <label class="h6" for="validationDefault03">Email address</label>
-        <input type="email" class="form-control bg-light rounded-lg" id="validationDefault03" placeholder="Email address" required>
+        <input type="email"  name="input_gmail" class="form-control bg-light rounded-lg" id="validationDefault03" placeholder="Email address" required>
       </div>
       <div class="col-md-6 mb-3">
         <label class="h6" for="validationDefault04">Phone number</label>
-        <input type="tel" class="form-control bg-light rounded-lg" id="validationDefault04" placeholder="Phone number" required>
+        <input type="tel"  name="input_tel" class="form-control bg-light rounded-lg" id="validationDefault04" placeholder="Phone number" required>
       </div>
     </div>
     <div class="form-row">
       <div class="col-md-6 mb-3">
         <label class="h6" for="validationDefault05">Address</label>
-        <input type="text" class="form-control bg-light rounded-lg" id="validationDefault05" placeholder="Address" required>
+        <input type="text"  name="form_adres" class="form-control bg-light rounded-lg" id="validationDefault05" placeholder="Address" required>
       </div>
       <div class="col-md-6 mb-3">
         <label class="h6" for="validationDefault06">Town / City</label>
-        <input type="text" class="form-control bg-light rounded-lg" id="validationDefault06" placeholder="Town or city" required>
+        <input type="text"  name="input_town" class="form-control bg-light rounded-lg" id="validationDefault06" placeholder="Town or city" required>
       </div>
     </div>
   <div class="form-row">
@@ -76,12 +76,12 @@
     </div>
     <div class="col-md-6 mb-3">
       <label class="h6" for="validationDefault08">ZIP/Postal code</label>
-      <input type="text" class="form-control bg-light rounded-lg" id="validationDefault08" placeholder="Postal code or ZIP" required>
+      <input type="text" class="form-control bg-light rounded-lg" id="validationDefault08" placeholder="Postal code or ZIP"  name="control" required>
     </div>
   </div>
   <div class="form-group mb-5 col-md-5 p-2 border rounded-lg bg-light">
     <div class="form-check d-flex align-items-center">
-      <input class="form-check-input" type="checkbox" id="invalidCheck2" required>
+      <input class="form-check-input" name="check_input" type="checkbox" id="invalidCheck2" required>
       <label class="form-check-label" for="invalidCheck2">
         Ship to a different address?
       </label>
@@ -143,17 +143,17 @@
 
         <div class="mt-3 mb-3">
           <label class="h6" for="validationDefault09">Card number</label>
-          <input type="text" class="form-control bg-light rounded-lg" id="validationDefault09" placeholder="Card number" required>
+          <input type="text" name="input_number" class="form-control bg-light rounded-lg" id="validationDefault09" placeholder="Card number" required>
         </div>
 
         <div class="form-row">
           <div class="col-md-6 mb-3">
             <label class="h6" for="validationDefault10">Card holder</label>
-            <input type="text" class="form-control bg-light rounded-lg" id="validationDefault10" placeholder="Card holder" required>
+            <input type="text" name="input_card" class="form-control bg-light rounded-lg" id="validationDefault10" placeholder="Card holder" required>
           </div>
           <div class="col-md-3 mb-3">
             <label class="h6" for="validationDefault11">Expiration date</label>
-            <input type="text" class="form-control bg-light rounded-lg" id="validationDefault11" placeholder="DD/MM/YY" required>
+            <input type="text" name="input_date" class="form-control bg-light rounded-lg" id="validationDefault11" placeholder="DD/MM/YY" required>
           </div>
           <div class="col-md-3 mb-3">
             <label class="h6" for="validationDefault12">CVC</label>
@@ -163,7 +163,7 @@
       </div>
     </div>
     <div class="custom-control custom-radio mb-3 rounded-lg border border-light py-2 pl-5 pr-2">
-      <input type="radio" id="customRadio4" name="customRadioPayment" class="custom-control-input">
+      <input type="radio"  id="customRadio4" name="customRadioPayment" class="custom-control-input">
     <label class="custom-control-label d-flex align-items-center justify-content-between h6" for="customRadio4">PayPal <svg width="76" height="19" viewBox="0 0 76 19" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M28.4156 4.09027H24.2102C24.071 4.09018 23.9363 4.13911 23.8304 4.22822C23.7246 4.31734 23.6545 4.44079 23.6328 4.57633L21.9319 15.2048C21.9241 15.2541 21.9272 15.3045 21.9411 15.3526C21.9549 15.4006 21.9792 15.4451 22.0121 15.483C22.0451 15.5209 22.086 15.5513 22.132 15.5721C22.178 15.5929 22.2281 15.6037 22.2788 15.6036H24.2865C24.4258 15.6037 24.5605 15.5547 24.6664 15.4654C24.7723 15.3762 24.8423 15.2526 24.8639 15.1169L25.3226 12.2503C25.3441 12.1147 25.4141 11.9912 25.5198 11.902C25.6256 11.8128 25.7602 11.7637 25.8994 11.7636H27.2307C30.0009 11.7636 31.5997 10.4424 32.0172 7.82421C32.2054 6.67876 32.0252 5.77876 31.481 5.14845C30.8833 4.45633 29.8232 4.09027 28.4156 4.09027ZM28.9008 7.97209C28.6708 9.45936 27.5179 9.45936 26.403 9.45936H25.7684L26.2136 6.68179C26.2267 6.60052 26.2687 6.52652 26.3321 6.47308C26.3956 6.41964 26.4763 6.39027 26.5598 6.39027H26.8507C27.6101 6.39027 28.3265 6.39027 28.6967 6.81694C28.9174 7.07148 28.9851 7.44967 28.9008 7.97209ZM40.9864 7.92421H38.9726C38.8891 7.92421 38.8084 7.95357 38.7449 8.00701C38.6814 8.06046 38.6394 8.13446 38.6264 8.21573L38.5372 8.77088L38.3964 8.56967C37.9604 7.94603 36.9882 7.73754 36.0179 7.73754C33.7925 7.73754 31.8918 9.39876 31.5216 11.7291C31.3291 12.8915 31.6028 14.003 32.2718 14.7782C32.8855 15.4909 33.7636 15.7878 34.8083 15.7878C36.6015 15.7878 37.5958 14.6515 37.5958 14.6515L37.506 15.203C37.498 15.2523 37.5009 15.3027 37.5146 15.3508C37.5283 15.3989 37.5524 15.4435 37.5852 15.4815C37.6181 15.5195 37.6589 15.5501 37.7049 15.5711C37.7509 15.592 37.8009 15.6029 37.8516 15.603H39.6656C39.8049 15.6031 39.9397 15.5541 40.0455 15.4648C40.1514 15.3756 40.2215 15.252 40.243 15.1163L41.3314 8.323C41.3394 8.2738 41.3365 8.22347 41.3229 8.17549C41.3092 8.12752 41.2851 8.08303 41.2523 8.04511C41.2195 8.00719 41.1788 7.97675 41.1329 7.95587C41.087 7.935 41.037 7.9242 40.9864 7.92421ZM38.1793 11.7872C37.985 12.9212 37.0719 13.6824 35.9072 13.6824C35.3224 13.6824 34.8551 13.4975 34.555 13.1472C34.2574 12.7994 34.1442 12.3042 34.2389 11.7527C34.4203 10.6285 35.3489 9.84239 36.4957 9.84239C37.0676 9.84239 37.5324 10.0297 37.8387 10.383C38.1455 10.74 38.2673 11.2381 38.1793 11.7872ZM51.7119 7.92421H49.6882C49.5927 7.92436 49.4988 7.94746 49.4144 7.9915C49.3301 8.03554 49.2579 8.09919 49.2042 8.17694L46.4131 12.2291L45.23 8.33512C45.1937 8.21636 45.1195 8.11227 45.0185 8.03827C44.9175 7.96426 44.795 7.92427 44.6692 7.92421H42.6805C42.6247 7.92406 42.5697 7.93706 42.52 7.96212C42.4703 7.98718 42.4274 8.02357 42.3948 8.06827C42.3623 8.11298 42.3411 8.16469 42.3329 8.21912C42.3247 8.27355 42.3299 8.32911 42.3479 8.38118L44.577 14.8285L42.4813 17.7442C42.4441 17.7959 42.422 17.8567 42.4175 17.92C42.4129 17.9832 42.4262 18.0465 42.4557 18.1028C42.4852 18.1591 42.5299 18.2063 42.5849 18.2393C42.6398 18.2723 42.7029 18.2897 42.7673 18.2897H44.7885C44.8829 18.2898 44.9759 18.2674 45.0595 18.2243C45.1431 18.1812 45.2149 18.1188 45.2687 18.0424L51.9997 8.46663C52.0361 8.41483 52.0575 8.35417 52.0615 8.29123C52.0655 8.22829 52.052 8.16547 52.0223 8.10959C51.9927 8.05371 51.9481 8.00689 51.8933 7.97421C51.8386 7.94153 51.7759 7.92424 51.7119 7.92421Z" fill="#022273"/>
       <path d="M58.4118 4.09027H54.2058C54.0667 4.09032 53.9321 4.13931 53.8264 4.22842C53.7207 4.31752 53.6507 4.44089 53.629 4.57633L51.9281 15.2048C51.9202 15.254 51.9232 15.3044 51.937 15.3524C51.9507 15.4003 51.9748 15.4448 52.0077 15.4827C52.0405 15.5206 52.0813 15.5511 52.1272 15.5719C52.1732 15.5928 52.2231 15.6036 52.2737 15.6036H54.4321C54.5295 15.6035 54.6236 15.5691 54.6975 15.5066C54.7715 15.4442 54.8204 15.3578 54.8355 15.263L55.3182 12.2503C55.3397 12.1147 55.4097 11.9912 55.5154 11.902C55.6212 11.8128 55.7558 11.7637 55.895 11.7636H57.2257C59.9965 11.7636 61.5947 10.4424 62.0128 7.82421C62.2016 6.67875 62.0202 5.77875 61.476 5.14845C60.8789 4.45633 59.8194 4.09027 58.4118 4.09027ZM58.897 7.97208C58.6677 9.45936 57.5147 9.45936 56.3992 9.45936H55.7652L56.2111 6.68178C56.2238 6.60052 56.2657 6.52645 56.3291 6.47298C56.3925 6.4195 56.4732 6.39016 56.5566 6.39027H56.8475C57.6063 6.39027 58.3233 6.39027 58.6935 6.81693C58.9142 7.07148 58.9813 7.44966 58.897 7.97208ZM70.982 7.92421H68.9694C68.8859 7.92398 68.8051 7.95328 68.7417 8.00677C68.6783 8.06026 68.6365 8.1344 68.6238 8.21572L68.5347 8.77087L68.3932 8.56966C67.9572 7.94602 66.9857 7.73754 66.0153 7.73754C63.7899 7.73754 61.8898 9.39875 61.5196 11.7291C61.3278 12.8915 61.6002 14.003 62.2692 14.7781C62.8842 15.4909 63.761 15.7878 64.8058 15.7878C66.5989 15.7878 67.5932 14.6515 67.5932 14.6515L67.5034 15.203C67.4954 15.2524 67.4984 15.3029 67.5121 15.3511C67.5259 15.3993 67.5501 15.4439 67.5831 15.482C67.6161 15.52 67.657 15.5505 67.7032 15.5714C67.7493 15.5923 67.7995 15.6031 67.8503 15.603H69.6636C69.8029 15.6029 69.9375 15.5538 70.0432 15.4646C70.149 15.3754 70.2189 15.2519 70.2404 15.1163L71.3295 8.32299C71.3372 8.27364 71.334 8.22322 71.3201 8.17521C71.3061 8.12719 71.2818 8.08271 71.2488 8.04482C71.2158 8.00694 71.1749 7.97654 71.1288 7.95572C71.0828 7.9349 71.0327 7.92415 70.982 7.92421ZM68.1749 11.7872C67.9818 12.9212 67.0675 13.6824 65.9028 13.6824C65.3192 13.6824 64.8507 13.4975 64.5506 13.1472C64.253 12.7994 64.1411 12.3042 64.2345 11.7527C64.4172 10.6284 65.3444 9.84239 66.4913 9.84239C67.0631 9.84239 67.528 10.0297 67.8343 10.383C68.1423 10.74 68.2641 11.2381 68.1749 11.7872ZM73.3562 4.38178L71.6302 15.2048C71.6222 15.254 71.6253 15.3044 71.639 15.3524C71.6527 15.4003 71.6768 15.4448 71.7097 15.4827C71.7425 15.5206 71.7833 15.5511 71.8293 15.5719C71.8752 15.5928 71.9252 15.6036 71.9757 15.6036H73.7111C73.9994 15.6036 74.2442 15.3975 74.2885 15.1169L75.9906 4.48905C75.9985 4.43979 75.9954 4.38942 75.9817 4.34142C75.968 4.29341 75.9439 4.2489 75.911 4.21095C75.8782 4.173 75.8374 4.14251 75.7915 4.12157C75.7456 4.10064 75.6956 4.08975 75.645 4.08966H73.7018C73.6184 4.08995 73.5378 4.11951 73.4745 4.17304C73.4112 4.22656 73.3692 4.30056 73.3562 4.38178Z" fill="#167FC4"/>
@@ -216,7 +216,7 @@
     <div class="form-group mb-5">
       <div class="bg-light p-2 border border-light rounded-lg mb-3">
         <div class="form-check d-flex align-items-center">
-          <input class="form-check-input" type="checkbox" id="invalidCheck15" required>
+          <input class="form-check-input" name="input_checkbox" type="checkbox" id="invalidCheck15" required>
           <label class="form-check-label" for="invalidCheck15">
             I agree with sending an Marketing and newsletter emails. No spam, promissed!
           </label>
@@ -225,7 +225,7 @@
 
       <div class="bg-light p-2 border border-light rounded-lg mb-3">
         <div class="form-check d-flex align-items-center">
-          <input class="form-check-input" type="checkbox" id="invalidCheck16" required>
+          <input class="form-check-input" name="input_check" type="checkbox" id="invalidCheck16" required>
           <label class="form-check-label" for="invalidCheck16">
             I agree with our <u>terms and conditions</u> and <u>privacy policy</u>.
           </label>
@@ -245,7 +245,7 @@
         </div>
       </div>
 
-      <div class="col-md-5 border rounded-lg py-3 px-2">
+      <div class="col-md-5 pl-4 borer rounded-lg py-3 px-2">
         <h2 class="h3">Order Summary</h2>
         <p class="font-weight-light text-black-50 ">Price can change depending on shipping method and taxes of your state.</p>
         <div class="row no-gutters container-lg align-items-start justify-content-between border-bottom">
